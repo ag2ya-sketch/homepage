@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EunJin Jeong &mdash; Biomedical Data Science</title>
+<meta name="description" content="EunJin Jeong, undergraduate research assistant at PHI Lab, The Catholic University of Korea. Administrative claims data, pharmacoepidemiology, clinical data normalization.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="masthead">
+  <div class="masthead__inner">
+    <a class="masthead__name" href="index.html">EunJin Jeong</a>
+
+    <nav class="nav" id="nav" aria-label="Site">
+      <ul>
+        <li><a href="index.html">About</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="cv.html">CV</a></li>
+      </ul>
+    </nav>
+
+    <div class="masthead__tools">
+      <button class="icon-btn" id="themeToggle" type="button" aria-label="Switch to dark theme">
+        <span aria-hidden="true" id="themeIcon">&#9686;</span>
+      </button>
+      <button class="icon-btn nav-toggle" id="navToggle" type="button"
+              aria-expanded="false" aria-controls="nav" aria-label="Open menu">
+        <span class="nav-toggle__bars" aria-hidden="true"></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="shell">
+
+  <!-- ===== author profile (academicpages sidebar) ===== -->
+  <aside class="sidebar">
+    <div class="sidebar__sticky">
+      <!-- images/profile.jpg 를 넣고 style.css 의 .avatar 주석을 해제하세요 -->
+      <div class="avatar" aria-hidden="true">EJ</div>
+
+      <h1 class="sidebar__name">EunJin Jeong<span class="sidebar__hangul">&#51221;&#51008;&#51652;</span></h1>
+      <p class="sidebar__role">Undergraduate Research Assistant</p>
+
+      <ul class="sidebar__meta">
+        <li><span class="k">Lab</span>PHI Lab</li>
+        <li><span class="k">Department</span>Biomedical Software Engineering</li>
+        <li><span class="k">University</span>The Catholic University of Korea</li>
+        <li><span class="k">Advisor</span>Prof. Hyo Jung Kim</li>
+      </ul>
+
+      <ul class="sidebar__links">
+        <li><a href="mailto:ag2ya@catholic.ac.kr">ag2ya@catholic.ac.kr</a></li>
+        <li><a href="https://github.com/ag2ya-sketch">GitHub</a></li>
+        <!-- 실제 주소가 생기면 주석을 해제하세요
+        <li><a href="https://linkedin.com/in/USERNAME">LinkedIn</a></li>
+        <li><a href="https://scholar.google.com/citations?user=ID">Google Scholar</a></li>
+        <li><a href="https://orcid.org/0000-0000-0000-0000">ORCID</a></li>
+        -->
+        <li><a href="files/CV_Eun_Jin_Jeong.pdf">Curriculum Vitae (PDF)</a></li>
+      </ul>
+    </div>
+  </aside>
+
+  <main class="main" id="main">
+
+    <section class="page-head">
+      <p class="page-head__num">01</p>
+      <h2 class="page-head__title hero__title">
+        Turning Korean healthcare<br>records into research-ready data.
+      </h2>
+      <p class="page-head__lede">
+        I am an undergraduate research assistant in the PHI Lab at The Catholic
+        University of Korea, studying biomedical software engineering and data
+        science. My work sits at the step most studies take for granted: cleaning,
+        standardizing, and validating administrative and clinical records before
+        anyone models them.
+      </p>
+    </section>
+
+    <ul class="interests" aria-label="Research interests">
+      <li>Administrative claims data</li>
+      <li>Pharmacoepidemiology</li>
+      <li>Data normalization</li>
+      <li>Clinical databases</li>
+      <li>Computable phenotyping</li>
+      <li>Biomedical data science</li>
+    </ul>
+
+    <section class="section" id="about" style="border-top:0">
+      <p class="section__num">02</p>
+      <h2 class="section__title">About</h2>
+
+      <div class="prose">
+        <p>
+          I study Biomedical Software Engineering at The Catholic University of
+          Korea and added Data Science as a double major in 2025. Since 2025 I have
+          worked in Prof. Hyo Jung Kim&rsquo;s PHI Lab.
+        </p>
+        <p>
+          Most of my work so far has been infrastructure: building a pipeline that
+          standardizes Korean national drug pricing data, mapping ingredients onto an
+          international terminology standard, and preparing multi-institutional breast
+          cancer records &mdash; named-entity recognition, preprocessing,
+          de-identification &mdash; so that AI models can be trained on them.
+        </p>
+        <p>
+          I am interested in how far claims and EMR data can be pushed toward reliable
+          evidence, and in the reproducibility problems that appear when the same
+          clinical concept is written five different ways across five hospitals.
+        </p>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <p class="section__num">03</p>
+      <h2 class="section__title">Contact</h2>
+      <p class="prose">
+        I am happy to hear about research collaborations, graduate study, and
+        anything involving messy healthcare data.
+      </p>
+
+      <div class="contact">
+        <a class="contact__mail" href="mailto:ag2ya@catholic.ac.kr">ag2ya@catholic.ac.kr</a>
+        <button class="btn" id="copyMail" type="button" data-mail="ag2ya@catholic.ac.kr">Copy address</button>
+      </div>
+      <p class="note" id="copyStatus" role="status"></p>
+
+      <!-- &#51204;&#54868;&#48264;&#54840;&#45716; &#49828;&#54806;&#183;&#44060;&#51064;&#51221;&#48372; &#50948;&#54744; &#46608;&#47928;&#50640; &#48744; &#49345;&#53468;&#51077;&#45768;&#45796;.
+      <p class="note">+82 10-6612-8392</p>
+      -->
+    </section>
+
+    <footer class="footer">
+      <p>&copy; <span id="year">2026</span> EunJin Jeong. Built with plain HTML, CSS, and JavaScript.</p>
+    </footer>
+
+  </main>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
