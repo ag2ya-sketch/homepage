@@ -71,60 +71,108 @@
   </aside>
 
   <main class="main" id="main">
-
-    <section class="page-head">
-      <p class="page-head__num">01</p>
-      <h2 class="page-head__title hero__title">
-        Turning Korean healthcare<br>records into research-ready data.
-      </h2>
-      <p class="page-head__lede">
-        I am an undergraduate research assistant in the PHI Lab at The Catholic
-        University of Korea, studying biomedical software engineering and data
-        science. My work sits at the step most studies take for granted: cleaning,
+    <!-- ===== intro ===== -->
+    <section class="intro">
+      <h2 class="intro__title">About me</h2>
+      <p class="intro__lede">
+        I am an undergraduate research assistant in the PHI Lab at
+        The Catholic University of Korea, advised by Prof. Hyo Jung Kim.
+        I study Biomedical Software Engineering with a double major in Data Science.
+      </p>
+      <p class="intro__body">
+        My work sits at the step most studies take for granted &mdash; cleaning,
         standardizing, and validating administrative and clinical records before
-        anyone models them.
+        anyone models them. So far that has meant a pipeline for Korean national
+        drug pricing data, and preprocessing multi-institutional breast cancer
+        records for AI-based models.
       </p>
     </section>
 
-    <ul class="interests" aria-label="Research interests">
-      <li>Administrative claims data</li>
-      <li>Pharmacoepidemiology</li>
-      <li>Data normalization</li>
-      <li>Clinical databases</li>
-      <li>Computable phenotyping</li>
-      <li>Biomedical data science</li>
-    </ul>
+    <!-- ===== research interests ===== -->
+    <section class="section">
+      <h2 class="section__title">Research interests</h2>
 
-    <section class="section" id="about" style="border-top:0">
-      <p class="section__num">02</p>
-      <h2 class="section__title">About</h2>
-
-      <div class="prose">
-        <p>
-          I study Biomedical Software Engineering at The Catholic University of
-          Korea and added Data Science as a double major in 2025. Since 2025 I have
-          worked in Prof. Hyo Jung Kim&rsquo;s PHI Lab.
-        </p>
-        <p>
-          Most of my work so far has been infrastructure: building a pipeline that
-          standardizes Korean national drug pricing data, mapping ingredients onto an
-          international terminology standard, and preparing multi-institutional breast
-          cancer records &mdash; named-entity recognition, preprocessing,
-          de-identification &mdash; so that AI models can be trained on them.
-        </p>
-        <p>
-          I am interested in how far claims and EMR data can be pushed toward reliable
-          evidence, and in the reproducibility problems that appear when the same
-          clinical concept is written five different ways across five hospitals.
-        </p>
-      </div>
+      <ul class="topics">
+        <li class="topic">
+          <h3 class="topic__name">Administrative claims data &amp; pharmacoepidemiology</h3>
+          <p class="topic__note">
+            Using Korean national health insurance data to study how drugs are
+            prescribed, reimbursed, and used in practice.
+          </p>
+        </li>
+        <li class="topic">
+          <h3 class="topic__name">Data normalization &amp; clinical databases</h3>
+          <p class="topic__note">
+            Mapping local codes and free text onto international terminology
+            standards so that datasets from different institutions can be compared.
+          </p>
+        </li>
+        <li class="topic">
+          <h3 class="topic__name">Computable phenotyping</h3>
+          <p class="topic__note">
+            Turning clinical concepts into definitions a machine can apply
+            consistently across hospitals.
+          </p>
+        </li>
+      </ul>
     </section>
 
-    <section class="section" id="contact">
-      <p class="section__num">03</p>
-      <h2 class="section__title">Contact</h2>
+    <!-- ===== selected work ===== -->
+    <section class="section">
+      <h2 class="section__title">Selected work</h2>
+      <p class="section__sub">2025 &ndash; present</p>
+
+      <ul class="worklist">
+        <li>
+          <a class="work" href="research.html">
+            <span class="work__date">2025 &ndash; present</span>
+            <span class="work__body">
+              <span class="work__title">
+                Drug Reimbursement Code Database for Korean NHIS Drug Information
+              </span>
+              <span class="work__note">
+                Built a pipeline to standardize drug pricing data and validate
+                ingredients against an international terminology standard.
+              </span>
+            </span>
+          </a>
+        </li>
+        <li>
+          <a class="work" href="research.html">
+            <span class="work__date">2025 &ndash; present</span>
+            <span class="work__body">
+              <span class="work__title">Breast Cancer Clinical Subtype Classification</span>
+              <span class="work__note">
+                Named-entity recognition and preprocessing on multi-institutional
+                real-world data used for AI-based models.
+              </span>
+            </span>
+          </a>
+        </li>
+        <li>
+          <a class="work" href="projects.html">
+            <span class="work__date">2025, 2026</span>
+            <span class="work__body">
+              <span class="work__title">
+                Digital Media Exposure and Development in Infants and Young Children
+              </span>
+              <span class="work__note">
+                A national cohort study funded across two terms by the Academic
+                Research Scholarship.
+              </span>
+            </span>
+          </a>
+        </li>
+      </ul>
+
+      <p class="more"><a href="research.html">All research</a> &nbsp;&middot;&nbsp; <a href="cv.html">Full CV</a></p>
+    </section>
+
+    <!-- ===== contact ===== -->
+    <section class="section">
+      <h2 class="section__title">Get in touch</h2>
       <p class="prose">
-        I am happy to hear about research collaborations, graduate study, and
+        I am always open to research discussions and collaborations, especially
         anything involving messy healthcare data.
       </p>
 
@@ -134,7 +182,7 @@
       </div>
       <p class="note" id="copyStatus" role="status"></p>
 
-      <!-- &#51204;&#54868;&#48264;&#54840;&#45716; &#49828;&#54806;&#183;&#44060;&#51064;&#51221;&#48372; &#50948;&#54744; &#46608;&#47928;&#50640; &#48744; &#49345;&#53468;&#51077;&#45768;&#45796;.
+      <!-- 전화번호는 스팸/개인정보 위험 때문에 빼두었습니다.
       <p class="note">+82 10-6612-8392</p>
       -->
     </section>
