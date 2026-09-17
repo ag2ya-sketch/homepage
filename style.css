@@ -5,13 +5,13 @@
    ========================================================= */
 
 :root {
-  --paper:     #FFFFFF;
-  --soft:      #F5F6F4;
-  --ink:       #1A2028;
-  --muted:     #62707C;
-  --rule:      #E2E5E1;
-  --accent:    #2E4A63;
-  --accent-bg: #EBEFF4;
+  --paper:     #F7F9FE;
+  --soft:      #EDF2FC;
+  --ink:       #16203A;
+  --muted:     #5A6785;
+  --rule:      #DDE5F3;
+  --accent:    #1B3BE0;
+  --accent-bg: #E6ECFD;
 
   --serif: "Newsreader", Georgia, "Noto Serif KR", serif;
   --sans:  "Source Sans 3", -apple-system, "Pretendard",
@@ -23,13 +23,13 @@
 }
 
 html[data-theme="dark"] {
-  --paper:     #131820;
-  --soft:      #1A222C;
-  --ink:       #E6E9EC;
-  --muted:     #96A3AF;
-  --rule:      #2A343F;
-  --accent:    #9DB8D6;
-  --accent-bg: #1E2A38;
+  --paper:     #0E1424;
+  --soft:      #151D31;
+  --ink:       #E4E9F5;
+  --muted:     #94A1C0;
+  --rule:      #232E48;
+  --accent:    #8CA6FF;
+  --accent-bg: #1A2340;
 }
 
 /* ---------- base ---------- */
@@ -43,6 +43,22 @@ body {
   font-size: 1.0625rem;
   line-height: 1.65;
   -webkit-font-smoothing: antialiased;
+}
+
+/* 페이지 위쪽에 깔리는 옅은 푸른 번짐 — 장식용, 클릭은 통과시킵니다 */
+body::before {
+  content: "";
+  position: fixed; inset: 0 0 auto 0; height: 60vh;
+  z-index: -1; pointer-events: none;
+  background:
+    radial-gradient(60% 70% at 18% 0%,  rgba(27, 59, 224, .13), transparent 70%),
+    radial-gradient(55% 65% at 78% 6%,  rgba(96, 150, 232, .16), transparent 72%),
+    radial-gradient(45% 55% at 50% 0%,  rgba(27, 59, 224, .06), transparent 70%);
+}
+html[data-theme="dark"] body::before {
+  background:
+    radial-gradient(60% 70% at 18% 0%, rgba(90, 125, 255, .18), transparent 70%),
+    radial-gradient(55% 65% at 78% 6%, rgba(60, 95, 200, .16), transparent 72%);
 }
 
 h1, h2, h3, h4 { font-family: var(--serif); font-weight: 500; line-height: 1.22; margin: 0; }
