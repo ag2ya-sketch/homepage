@@ -20,7 +20,7 @@
   --serif: "Crimson Pro", Georgia, "Noto Serif KR", serif;
   --sans:  "Work Sans", -apple-system, "Pretendard", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
 
-  --sidebar-w:   19rem;
+  --sidebar-w:   20rem;
   --content-max: 44rem;
   --masthead-h:  3.5rem;
 }
@@ -91,7 +91,10 @@ a { color: inherit; text-decoration: none; }
   max-width: 76rem; height: 100%; margin: 0 auto; padding: 0 1.5rem;
   display: flex; align-items: center; gap: 1rem;
 }
-.masthead__name { font-family: var(--serif); font-size: 1.15rem; margin-right: auto; }
+.masthead__name {
+  font-family: var(--serif); font-size: 1.18rem;
+  margin-right: auto;
+}
 
 .nav ul { display: flex; gap: 1.4rem; }
 .nav a {
@@ -172,20 +175,20 @@ a { color: inherit; text-decoration: none; }
   padding-top: 1.1rem;
   margin: 0 0 1.1rem;
   font-family: var(--serif);
-  font-size: 1.16rem;
+  font-size: 1.3rem;
   font-weight: 600;
-  line-height: 1.42;
+  line-height: 1.38;
   color: var(--ink);
 }
 
 .sidebar__keywords {
-  display: flex; flex-wrap: wrap; gap: .3rem;
+  display: flex; flex-wrap: wrap; gap: .28rem;
   justify-content: center;
 }
 .sidebar__keywords li {
-  font-size: .84rem; color: var(--muted);
+  font-size: .78rem; color: var(--muted);
   border: 1px solid var(--rule); border-radius: 100px;
-  padding: .18rem .55rem;
+  padding: .18rem .45rem;
   transition: color .15s ease, border-color .15s ease;
 }
 .sidebar__keywords li:hover { color: var(--accent); border-color: var(--accent); }
