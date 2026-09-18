@@ -18,7 +18,7 @@
   --sans:  "Source Sans 3", -apple-system, "Pretendard",
            "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
 
-  --sidebar-w:   17rem;
+  --sidebar-w:   19rem;
   --content-max: 44rem;
   --masthead-h:  3.5rem;
 }
@@ -152,9 +152,9 @@ a { color: inherit; text-decoration: none; }
 }
 .sidebar__role {
   display: inline-block;
-  color: var(--accent); font-size: .88rem;
+  color: var(--accent); font-size: .8rem;
   background: var(--accent-bg); border-radius: 100px;
-  padding: .2rem .8rem; margin-bottom: 1.4rem;
+  padding: .2rem .7rem; margin-bottom: 1.4rem;
 }
 
 .sidebar__motto {
@@ -163,18 +163,19 @@ a { color: inherit; text-decoration: none; }
   margin: 0 0 1.1rem;
   font-family: var(--serif);
   font-size: 1.08rem;
+  font-weight: 600;
   line-height: 1.4;
   color: var(--ink);
 }
 
 .sidebar__keywords {
-  display: flex; flex-wrap: wrap; gap: .35rem;
+  display: flex; flex-wrap: wrap; gap: .3rem;
   justify-content: center;
 }
 .sidebar__keywords li {
-  font-size: .82rem; color: var(--muted);
+  font-size: .78rem; color: var(--muted);
   border: 1px solid var(--rule); border-radius: 100px;
-  padding: .18rem .6rem;
+  padding: .18rem .55rem;
   transition: color .15s ease, border-color .15s ease;
 }
 .sidebar__keywords li:hover { color: var(--accent); border-color: var(--accent); }
@@ -280,7 +281,7 @@ a { color: inherit; text-decoration: none; }
   transition: background .18s ease, box-shadow .18s ease;
 }
 .worklist li:first-child .work { border-top: 0; }
-.work__date { color: var(--accent); font-size: .91rem; padding-top: .15rem; }
+.work__date { color: var(--accent); font-size: 1rem; padding-top: .15rem; }
 .work__body { display: block; }
 .work__title {
   display: block; font-family: var(--serif); font-size: 1.1rem;
@@ -337,13 +338,13 @@ a { color: inherit; text-decoration: none; }
 
 .tags { display: flex; flex-wrap: wrap; gap: .4rem; }
 .tags li {
-  font-size: .84rem; color: var(--muted);
-  border: 1px solid var(--rule); border-radius: 100px; padding: .15rem .65rem;
+  font-size: .94rem; color: var(--muted);
+  border: 1px solid var(--rule); border-radius: 100px; padding: .22rem .75rem;
 }
 
 /* ---------- timeline ---------- */
 .tl {
-  display: grid; grid-template-columns: 10.5rem minmax(0, 1fr); gap: 1.2rem;
+  display: grid; grid-template-columns: 9rem minmax(0, 1fr); gap: 1.1rem;
   padding: 1.3rem 1rem 1.3rem 1.2rem;
   margin: 0 -1rem;
   border-top: 1px solid var(--rule);
@@ -355,9 +356,9 @@ a { color: inherit; text-decoration: none; }
   background: var(--accent-bg);
   box-shadow: inset 3px 0 0 0 var(--accent);
 }
-.tl__date { color: var(--accent); font-size: .92rem; margin: .2rem 0 0; }
-.tl__title { font-size: 1.11rem; margin-bottom: .35rem; }
-.tl__body p { color: var(--muted); font-size: 1.02rem; margin: 0 0 .35rem; }
+.tl__date { color: var(--accent); font-size: 1rem; margin: .2rem 0 0; }
+.tl__title { font-size: 1.14rem; margin-bottom: .35rem; }
+.tl__body p { color: var(--muted); font-size: 1.06rem; margin: 0 0 .35rem; }
 .tl__body p:last-child { margin-bottom: 0; }
 
 /* ---------- cards ---------- */
