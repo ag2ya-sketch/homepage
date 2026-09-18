@@ -141,10 +141,18 @@ a { color: inherit; text-decoration: none; }
   background: var(--accent-bg) center/cover no-repeat;
   color: var(--accent);
   display: grid; place-items: center;
-  font-family: var(--serif); font-size: 2.2rem; letter-spacing: .04em;
+  overflow: hidden;
   margin: 0 auto 1.25rem;
   box-shadow: 0 0 0 6px color-mix(in srgb, var(--accent) 8%, transparent);
-  /* 사진 사용 시: background-image:url("images/profile.jpg"); color:transparent; */
+  /* 사진을 쓰려면 아래 두 줄의 주석을 풀고, HTML의 <svg>...</svg> 를 지우세요.
+     background-image: url("images/profile.jpg");
+     color: transparent; */
+}
+.avatar svg {
+  width: 74%; height: 74%;
+  margin-top: 12%;              /* 어깨가 원 아래에 닿도록 */
+  fill: currentColor;
+  opacity: .45;
 }
 
 .sidebar__name { font-size: 1.62rem; margin-bottom: .15rem; }
